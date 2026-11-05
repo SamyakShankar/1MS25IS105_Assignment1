@@ -1,0 +1,6 @@
+{
+  "name": "PaperScope – AI Research Paper Analyzer",
+  "description": "Computer Science research paper analysis agent for CS students. Transforms arXiv papers into core concept breakdowns, Mermaid architectural flowcharts, and student project extensions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

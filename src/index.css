@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  .font-serif {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+}
+
+/* Custom scrollbar for academic paper view */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.6);
+}
+
+/* Mermaid SVG styling enhancements */
+.mermaid-container svg {
+  max-width: 100% !important;
+  height: auto !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.mermaid-container .node rect,
+.mermaid-container .node circle,
+.mermaid-container .node polygon {
+  rx: 8px !important;
+  ry: 8px !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Academic background grid */
+.academic-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
